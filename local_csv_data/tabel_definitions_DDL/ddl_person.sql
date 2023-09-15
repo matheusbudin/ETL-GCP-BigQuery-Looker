@@ -2,7 +2,7 @@
 
 CREATE TABLE testRoxDB.Person
 (
-  BusinessEntityID INT NOT NULL,
+  BusinessEntityID INT64 NOT NULL,
   PersonType STRING,
   NameStyle INT64,
   Title STRING,
