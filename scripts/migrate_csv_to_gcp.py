@@ -12,7 +12,8 @@ if not bucket_name:
 bucket = client.bucket(bucket_name)
 
 # Specify the local directory containing your CSV files
-local_directory = './local_csv_data'
+#TODO replace this with sys.arg[1]
+local_directory = './local_csv_data/raw_files'
 
 # Loop through each CSV file and upload to GCS
 for filename in os.listdir(local_directory):
