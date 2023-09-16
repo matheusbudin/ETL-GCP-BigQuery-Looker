@@ -2,4 +2,5 @@
 ./local_csv_data
 .env
 C:\Users\mathe\OneDrive\Área de Trabalho\Rox\rox-gcp-test\local_csv_data
-rox-test-task-1df957f56075.json
+rox-test-task-790c5fdafa10.json
+scripts\ipynbs_data_cleaning\data_cleaned\test_json_export

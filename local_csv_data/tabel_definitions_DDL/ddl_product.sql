@@ -1,4 +1,4 @@
-CREATE TABLE testRoxDB.Product
+CREATE TABLE testRoxDB.ddl_product
 (
   ProductID INT64 NOT NULL,
   Name STRING,
@@ -26,4 +26,3 @@ CREATE TABLE testRoxDB.Product
   rowguid STRING,
   ModifiedDate TIMESTAMP
 )
-

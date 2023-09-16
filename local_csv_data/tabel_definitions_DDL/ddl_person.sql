@@ -1,6 +1,6 @@
 --GCP DDL
 
-CREATE TABLE testRoxDB.Person
+CREATE TABLE testRoxDB.ddl_person
 (
   BusinessEntityID INT64 NOT NULL,
   PersonType STRING,

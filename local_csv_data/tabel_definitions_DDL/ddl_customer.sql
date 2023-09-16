@@ -1,4 +1,4 @@
-CREATE TABLE testRoxDB.Customer
+CREATE TABLE testRoxDB.ddl_customer
 (
   CustomerID INT64 NOT NULL,
   PersonID STRING,
