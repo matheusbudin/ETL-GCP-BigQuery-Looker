@@ -1,15 +1,3 @@
-# rox-gcp-test
-important : create and manage your credentials.json and then pass as an variable on git bash
-
-export GOOGLE_APPLICATION_CREDENTIALS="path_to_your_service_account_file.json"
-
-you need to have a .env file that stores all your local enviroments to protect your data for example:
-
-export  MY_GCS_BUCKET = "<bucket_name>"
-export  MY_GCS_BUCKET_URL = "<bucket_URL>"
-export  GOOGLE_APPLICATION_CREDENTIALS="<your_credentials_path>"
-
-
 
 ![Arquitetura](https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/gcp-architecture.png)
 
@@ -57,6 +45,7 @@ export DATA_BUCKET = "<yourbucket_name>"
 
 export DATASET_NAME = "<yourDataSetName>"
 
+**Observação: foi utilizado uma virtualenv para este projeto e as libs utilziadas estão no requeriments.txt**
 
 ### Limpeza de Dados:
 
@@ -115,7 +104,7 @@ HAVING lines_qtd >= 3
 ORDER BY lines_qtd DESC
 ```
 
-<img width="806"  src="https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/query_1.png">
+![query_1](https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/query_1.png)
 
 2.	Escreva uma query que ligue as tabelas Sales.SalesOrderDetail, Sales.SpecialOfferProduct e Production.Product e retorne os 3 produtos (Name) mais vendidos (pela soma de OrderQty), agrupados pelo número de dias para manufatura (DaysToManufacture).
 
@@ -197,3 +186,28 @@ ORDER BY date;
 ```
 
 ![evidencia_query_5](https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/query_5_evidencia.png)
+
+
+### Dashboard - BI
+
+Foi utilizado a ferramenta nativa do GCP para visualização de dados o Google Looker Studio (antigo Google Data Studio)
+
+Relacionamento das tabelas:
+
+![relacionamento_tabelas](https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/relacionamento_looker_studio.png)
+
+Alguns gráficos:
+-Quantidade de perdidos por data
+-Total por CustomerID (cumulativo e em escala logarítimica)
+
+
+![dashboard](![relacionamento_tabelas](https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/relacionamento_looker_studio.png))
+
+
+## Melhorias no radar:
+
+- De imediato a primeira melhoria é colocar uma GCP Function que terá o Trigger configurado para que seja disparada sempre que um arquivo novo entre no storage e faça a carga incremental na tabela correspondente;
+
+- Explorar um serviço GCP de base de dados relacional não serverless para um cenário Big Data e comparar os custos com a opção direta do bigquery abordada inicialmente neste projeto;
+
+- utilizar o cenário Big Data: aumentar o tamanho dos arquivos CSV, e utilizar o cluster da GCP o **Data Proc**
