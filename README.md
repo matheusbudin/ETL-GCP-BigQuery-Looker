@@ -11,3 +11,17 @@ export  GOOGLE_APPLICATION_CREDENTIALS="<your_credentials_path>"
 
 
 
+![Arquitetura](https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/gcp-architecture.png)
+
+
+Este projeto foi desenvolvido em função de um teste da Rox Partener a qual proveu as fontes de dados e requisitou uma infraestrutura em nuvem.
+A base de dados fornecida trás o contexto de uma empresa que produz bicicletas fictícia.
+
+TO DO:
+
+** -Realizar a modelagem dos dados;
+** -Criação de infraestrutura na nuvem (nesse caso foi escolhida a GCP - meu primeiro contato inclusive com esta nuvem pois trabalho com AWS);
+** -Criação de todos os artefatos necessários para carga dos arquivos para o banco de dados;
+** -Desenvolvimento dos scripts para análise de dados;
+** -opcional: criar um relatório com qualquer ferramenta de BI.
+
