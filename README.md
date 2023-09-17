@@ -48,9 +48,13 @@ Considerando um projeto piloto que possui espaços para melhorias que serão lis
 
 
 export  MY_GCS_BUCKET_URL = "<yourbucket_url>"
+
 export  GOOGLE_APPLICATION_CREDENTIALS="<your_credentials.json>"
+
 export DDL_BUCKET = "<your_credentials.json>"  # Este bucket é para melhoria futura que utilizará **GCP Functions**
+
 export DATA_BUCKET = "<yourbucket_name>" 
+
 export DATASET_NAME = "<yourDataSetName>"
 
 
