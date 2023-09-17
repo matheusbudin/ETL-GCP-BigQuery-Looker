@@ -115,7 +115,7 @@ HAVING lines_qtd >= 3
 ORDER BY lines_qtd DESC
 ```
 
-[query_1](https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/query_1.png)
+<img width="806"  src="https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/query_1.png">
 
 2.	Escreva uma query que ligue as tabelas Sales.SalesOrderDetail, Sales.SpecialOfferProduct e Production.Product e retorne os 3 produtos (Name) mais vendidos (pela soma de OrderQty), agrupados pelo número de dias para manufatura (DaysToManufacture).
 
