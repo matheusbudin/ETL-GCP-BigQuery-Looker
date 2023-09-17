@@ -133,7 +133,7 @@ WITH RankedProducts AS (
 )
 SELECT * FROM RankedProducts WHERE pos <= 3
 ```
-[query_2](https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/query_2.png)
+![query_2](https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/query_2.png)
 
 3.	Escreva uma query ligando as tabelas Person.Person, Sales.Customer e Sales.SalesOrderHeader de forma a obter uma lista de nomes de clientes e uma contagem de pedidos efetuados.
 
@@ -149,7 +149,7 @@ GROUP BY c.CustomerID, full_name
 ORDER BY qtd DESC;
 ```
 
-[query_3](https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/query_3.png)
+![query_3](https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/query_3.png)
 
 4.	Escreva uma query usando as tabelas Sales.SalesOrderHeader, Sales.SalesOrderDetail e Production.Product, de forma a obter a soma total de produtos (OrderQty) por ProductID e OrderDate.
 
@@ -166,7 +166,7 @@ GROUP BY id, nome, order_date
 ORDER BY order_date, qtd DESC;
 ```
 
-[query_4](https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/query_4.png)
+![query_4](https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/query_4.png)
 
 5.	Escreva uma query mostrando os campos SalesOrderID, OrderDate e TotalDue da tabela Sales.SalesOrderHeader. Obtenha apenas as linhas onde a ordem tenha sido feita durante o mês de setembro/2011 e o total devido esteja acima de 1.000. Ordene pelo total devido decrescente.
 
@@ -181,7 +181,7 @@ ORDER BY total_devido DESC;
 ```
 
 
-[query_5](https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/query_5.png)
+![query_5](https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/query_5.png)
 
 **Evidencia questão 5.**
 
@@ -196,4 +196,4 @@ WHERE OrderDate BETWEEN '2011-08-01' AND '2011-10-01' AND TotalDue > 1000
 ORDER BY date;
 ```
 
-[evidencia_query_5](https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/query_5_evidencia.png)
+![evidencia_query_5](https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/query_5_evidencia.png)
