@@ -8,3 +8,6 @@ you need to have a .env file that stores all your local enviroments to protect y
 export  MY_GCS_BUCKET = "<bucket_name>"
 export  MY_GCS_BUCKET_URL = "<bucket_URL>"
 export  GOOGLE_APPLICATION_CREDENTIALS="<your_credentials_path>"
+
+
+
