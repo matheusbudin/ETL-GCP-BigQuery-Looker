@@ -2,7 +2,7 @@
 ![Arquitetura](https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/gcp-architecture.png)
 
 
-Este projeto foi desenvolvido em função de um teste da Rox Partener a qual proveu as fontes de dados e requisitou uma infraestrutura em nuvem.
+Este projeto foi desenvolvido baseado em um desafio promovido pela Rox Partner a qual proveu as fontes de dados e requisitou uma infraestrutura em nuvem.
 A base de dados fornecida trás o contexto de uma empresa que produz bicicletas fictícia.
 
 TO DO:
@@ -68,14 +68,15 @@ Topologia dos dados enviada:
 
 Nosso "DB" que no bigquery é chamado de "DataSet" porém que possui funcionamento análogo ao DB. Teve a estrutura definida da seguinte forma:
 
-+ rox-test-task
-++ testRoxDB
-+++ customer_personid_not_null
-+++ Person
-+++ Product
-+++ SalesOrderDetail
-+++ SalesOrderHeader
-+++ SpecialOfferProduct
+.rox-test-task
+├── testRoxDB/
+│   ├── customer_personid_not_null
+│   ├── Person
+│   ├── Product
+│   ├── SalesOrderDetail
+│   ├── SalesOrderHeader
+│   └── SpecialOfferProduct
+
 
 Os DDLs utilizados no script de criação das tabelas diretamente no big query podem ser consultados na pasta a seguir: [DDLs.sql](https://github.com/matheusbudin/rox-gcp-test/tree/features-dev/local_csv_data/tabel_definitions_DDL) e para a criação do DB/ dataSet do big query que vai abrigar essas tabelas: [DB_dataset](https://github.com/matheusbudin/rox-gcp-test/tree/features-dev/local_csv_data/db_definition)
 
