@@ -201,7 +201,7 @@ Alguns gráficos:
 -Total por CustomerID (cumulativo e em escala logarítimica)
 
 
-![dashboard]((https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/relacionamento_looker_studio.png))
+![dashboard](https://github.com/matheusbudin/ETL-GCP-BigQuery-Looker/blob/main/images_for_readme/dashboard_rox.png)
 
 
 ## Melhorias no radar:
