@@ -199,7 +199,7 @@ Dashboard is composed by two graphics:
   -Total by CustomerID (cumulative and in logarithmic scale)
 
 
-![dashboard]((https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/relacionamento_looker_studio.png)
+![dashboard](https://github.com/matheusbudin/rox-gcp-test/blob/features-dev/images_for_readme/relacionamento_looker_studio.png)
 
 
 ## Radar improvements:
